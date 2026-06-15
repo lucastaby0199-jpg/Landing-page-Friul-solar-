@@ -3,9 +3,11 @@
    ========================================================================== */
 
 :root {
-  --color-blue: #1668C1;
-  --color-blue-dark: #104E94;
-  --color-green: #3CB878;
+  --color-blue: #0878B8;
+  --color-blue-light: #28B0E8;
+  --color-blue-dark: #065A8A;
+  --color-green: #54C080;
+  --color-green-dark: #389868;
   --color-text: #20262B;
   --color-text-muted: #5B6770;
   --color-bg: #FFFFFF;
@@ -55,9 +57,6 @@ a {
   margin: 0 auto;
   padding: 0 24px;
 }
-
-.accent-green { color: var(--color-green); }
-.accent-blue { color: var(--color-blue); }
 
 /* ==========================================================================
    Buttons
@@ -175,16 +174,9 @@ a {
   gap: 10px;
 }
 
-.navbar__logo-icon {
-  width: 38px;
-  height: 38px;
-}
-
-.navbar__logo-text {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--color-blue);
+.navbar__logo-img {
+  height: 40px;
+  width: auto;
 }
 
 .navbar__links {
@@ -336,7 +328,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-green-dark);
   margin-bottom: 14px;
 }
 
@@ -563,7 +555,7 @@ a {
   height: 24px;
   border-radius: 50%;
   background: rgba(60, 184, 120, 0.15);
-  color: var(--color-green);
+  color: var(--color-green-dark);
   font-size: 13px;
   font-weight: 800;
   margin-top: 2px;
@@ -709,8 +701,12 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.footer .navbar__logo-text {
-  color: #fff;
+.footer__logo-img {
+  height: 38px;
+  width: auto;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
 }
 
 .footer__brand p {
